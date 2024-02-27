@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import Home from './Components/Home.jsx';
+import Education from './Components/Education.jsx';
+import WorkProject from './Components/WorkProject.jsx'
+import Skills from './Components/Skills.jsx'
+import GetInTouch from './Components/GetInTouch.jsx'
+import NoPage from './Components/NoPage.jsx';
+import NavBar from './NavBar.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        {/* <Route path="Home" element={<Home />} /> */}
+        <Route path="Education" element={<Education />} />
+        <Route path="WorkProject" element={<WorkProject />} />
+        <Route path="Skills" element={<Skills />} />
+        <Route path="GetInTouch" element={<GetInTouch />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
