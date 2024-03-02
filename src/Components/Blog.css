@@ -1,0 +1,61 @@
+.spotify-list::-webkit-scrollbar {
+  width: 2rem;
+}
+/* Handle */
+.spotify-list::-webkit-scrollbar-thumb {
+  background: rgb(120, 110, 110); 
+  border-radius: 6px;
+}
+
+
+.Blog-head{
+  background: #343a40;
+  height: 100%;
+  padding: 2%;
+  width: 100%;
+}
+hr{
+  width: 100%;
+}
+.music-title,.travelling-title{
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+
+}
+.travelling-title{
+  margin-top: 10px;
+}
+.spotify-list{
+  display: flex;
+  overflow: auto;
+  white-space: nowrap;
+}
+iframe{
+  width:20% ;
+  height:30vh;
+  border-radius: 12px;
+  padding: 0.25rem;
+}
+@media only screen and (max-width: 600px) {
+  .spotify-list::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  /* Handle */
+  .spotify-list::-webkit-scrollbar-thumb {
+    background: rgb(120, 110, 110); 
+    border-radius: 6px;
+  }
+  .spotify-list{
+    display: grid;
+    height: 75vh;
+    overflow: auto;
+  }
+  iframe{
+    width:75% ;
+    height:25vh;
+    border-radius: 12px;
+    padding: 0.25rem;
+    margin: 0 auto;
+  }
+}

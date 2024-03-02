@@ -4,6 +4,7 @@ import WorkProject from './Components/WorkProject.jsx'
 import Skills from './Components/Skills.jsx'
 import GetInTouch from './Components/GetInTouch.jsx'
 import NoPage from './Components/NoPage.jsx';
+import Blog from './Components/Blog.jsx';
 import NavBar from './NavBar.jsx'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
@@ -20,6 +21,7 @@ function App() {
         <Route path="WorkProject" element={<WorkProject />} />
         <Route path="Skills" element={<Skills />} />
         <Route path="GetInTouch" element={<GetInTouch />} />
+        <Route path="Blog" element={<Blog />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

@@ -1,0 +1,41 @@
+.GetInTouch-head{
+  background: #343a40;
+  height: 90.6vh;
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.getintouch-contact-us{
+  /* font-size: 1.5rem; */
+  width: 50%;
+}
+
+.contact-icon-getintouch{
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-map{
+  width: 50%;
+}
+.contact-map iframe{
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .GetInTouch-head{
+    display: block;
+    height: 92.4vh;
+  }
+  .getintouch-contact-us,.contact-map{
+    width: 100%;
+  }
+  .contact-map{
+    height: 40vh;
+    margin-top: 5rem;
+  }
+
+  .getintouch-contact-us span,.contact-icon-getintouch{
+    width: 50%;
+  }
+}

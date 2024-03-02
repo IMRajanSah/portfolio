@@ -1,0 +1,46 @@
+.workproject-head{
+  background: #343a40;
+  height: 100%;
+  padding: 1.5%;
+  display: flex;
+  
+}
+.work{
+  width: 50%;
+  display: block;
+}
+.title{
+  font-size: 2rem;
+}
+.work-title{
+  font-size: 1.20rem;
+}
+.work-duration{
+  font-size: 0.75rem;
+}
+.project-title{
+  font-size: 1.20rem;
+}
+.project-duration{
+  font-size: 0.75rem;
+}
+hr{
+  width: 75%;
+}
+.project{
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  .workproject-head{
+    display: block;
+    height: 100%;
+  }
+  .work{
+    width: 100%;
+    padding: 3%;
+  }
+  .project{
+    width: 100%;
+    padding: 3%;
+  }
+}

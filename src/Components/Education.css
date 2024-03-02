@@ -1,0 +1,19 @@
+.Education-content{
+  background: #343a40;
+  height: 90.6vh;
+  padding: 4%;
+}
+.table{
+  background-color: #343a40;
+}
+td .fa{
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  .Education-content{
+    height: 94.6vh;
+  }
+  td{
+    font-size: 0.75rem;
+  }
+}

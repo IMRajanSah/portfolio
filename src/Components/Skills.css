@@ -1,0 +1,17 @@
+.skills-head{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background: #343a40;
+  height: 90.6vh;
+  padding: 4%;
+  
+}
+@media only screen and (max-width: 600px) {
+  .skills-head{
+    display: block;
+    /* width: 8rem; */
+    padding-left: 20%;
+    height: 100%;
+  }
+}
